@@ -3,7 +3,8 @@ var jsPsych = initJsPsych({
   show_progress_bar: true,
   message_progress_bar: ' ',
   on_finish: function() {
-      jsPsych.data.get().localSave('csv',participant_id + '_changeblindness.csv');      
+      jsPsych.data.get().localSave('csv',participant_id + '_changeblindness.csv');
+      window.location = 'https://app.prolific.com/submissions/complete?cc=C19OJ7GF'
     }
   })
 
